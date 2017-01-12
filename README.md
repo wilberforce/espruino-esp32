@@ -20,7 +20,9 @@ The toolchain is required from this is example is linux 64 bit:
 https://github.com/espressif/esp-idf/blob/master/docs/linux-setup.rst
 
 ```
-curl -Ls https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-59.tar.gz | tar Jxf -
+mkdir esp32
+cd esp32
+curl -Ls https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-59.tar.gz | tar xfz -
 PATH=$PATH:`pwd`/xtensa-esp32-elf/bin/
 ```
 
@@ -29,6 +31,11 @@ PATH=$PATH:`pwd`/xtensa-esp32-elf/bin/
 git clone https://github.com/wilberforce/espruino-esp32.git
 cd espruino-esp32
 git submodule update --init
+cd esp-idf
+git submodule update --init
+source setenv.sh
+cd ../app
+make
 cd ..
 ```
 
