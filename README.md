@@ -33,7 +33,6 @@ cd espruino-esp32
 git submodule update --init
 cd esp-idf
 git submodule update --init
-cd ..
 source setenv.sh
 cd ../app
 make
