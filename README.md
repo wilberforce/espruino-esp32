@@ -3,12 +3,14 @@
 
 The following folder structure will be built in the current directory - suggested name esp32:
 
+```
 esp32 
   -- xtensa-esp32-elf
   -- Espruino
   -- espruino-esp32
          -- app
          -- esp-idf
+```
          
 To build these three parts:
 
