@@ -22,7 +22,7 @@ https://github.com/espressif/esp-idf/blob/master/docs/linux-setup.rst
 ```
 mkdir esp32
 cd esp32
-curl -Ls https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-59.tar.gz | tar xfz -
+curl -Ls https://dl.espressif.com/dl/xtensa-esp32-elf-linux64-1.22.0-61-gab8375a-5.2.0.tar.gz | tar xfz -
 PATH=$PATH:`pwd`/xtensa-esp32-elf/bin/
 ```
 
