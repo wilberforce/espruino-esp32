@@ -41,10 +41,8 @@ cd ..
 
 3. The Espruino project - the current build is done in the ESP32 branch until out of Alpha
 ```
-git clone https://github.com/espruino/Espruino.git
+git clone -b ESP32 https://github.com/espruino/Espruino.git
 cd Espruino
-git branch ESP32
-git checkout ESP32
 make
 ```
 
