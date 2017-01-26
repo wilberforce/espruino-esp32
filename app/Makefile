@@ -12,5 +12,11 @@ PROJECT_NAME := espruino-esp32
 # Components not used
 #  
 
+#COMPONENT_OWNBUILDTARGET: build.tar
+
 include $(IDF_PATH)/make/project.mk
+
+build.tar:
+	tar cfv build.tar `find build -name *.a`
+
 
