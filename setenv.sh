@@ -1,7 +1,8 @@
 #!/bin/bash
-export ESP_IDF_PATH=$(pwd)/esp-idf
-export IDF_PATH=$(pwd)/esp-idf
-export ESP_APP_TEMPLATE_PATH=$(pwd)/app
+ESP32_BASE=$(pwd)
+export ESP_IDF_PATH=${ESP32_BASE}/esp-idf
+export IDF_PATH=${ESP32_BASE}/esp-idf
+export ESP_APP_TEMPLATE_PATH=${ESP32_BASE}/app
 export ESP32=1
 #export RELEASE=1
-[[ ":$PATH:" != *":/opt/xtensa-esp32-elf/bin:"* ]] && PATH="/opt/xtensa-esp32-elf/bin:${PATH}"
+[[ ":$PATH:" != *":${ESP32_BASE}/../xtensa-esp32-elf/bin:"* ]] && PATH="${ESP32_BASE}/../xtensa-esp32-elf/bin:${PATH}"
